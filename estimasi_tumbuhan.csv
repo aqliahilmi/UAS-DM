@@ -1,0 +1,19 @@
+import pandas as pd
+
+# Buat dataset contoh untuk estimasi harga tumbuhan
+data = {
+    'jenis': ['Monstera', 'Kaktus', 'Anggrek', 'Monstera', 'Kaktus'],
+    'ukuran_pot': [20, 15, 25, 30, 10],
+    'tinggi': [50, 40, 60, 70, 35],
+    'umur': [12, 8, 15, 10, 6],
+    'kondisi': ['Sehat', 'Kurang Sehat', 'Sehat', 'Sehat', 'Kurang Sehat'],
+    'harga': [300000, 150000, 500000, 350000, 100000]
+}
+
+# Konversi ke DataFrame
+df = pd.DataFrame(data)
+
+# Simpan dataset sebagai file CSV
+df.to_csv('estimasi_tumbuhan.csv', index=False)
+
+print("File CSV berhasil dibuat sebagai 'estimasi_tumbuhan.csv'")
