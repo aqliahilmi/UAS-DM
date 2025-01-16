@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 
 # Load model yang sudah dilatih
-model = pickle.load(open('/mount/src/uas-dm/estimasi_tumbuhan.sav', 'rb'))
+model = pickle.load(open('estimasi_tumbuhan.csv', 'rb'))
 
 # Judul aplikasi
 st.title('Estimasi Harga Tumbuhan')
